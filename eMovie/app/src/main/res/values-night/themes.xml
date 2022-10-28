@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.EMovie" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#1E1E1E</item>
+        <item name="colorPrimaryVariant">#800606</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="SplashTheme" parent="Theme.EMovie">
+        <item name="android:windowBackground">@drawable/splash_screen_emovie</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="ChipTextAppearance" parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/bg_chip_text_list</item>
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Emovie.Chip.Choice</item>
+    </style>
+
+    <style name="ThemeOverlay.Emovie.Chip.Choice" parent="">
+        <item name="elevationOverlayEnabled">false</item>
+    </style>
+
+</resources>
